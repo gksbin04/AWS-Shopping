@@ -56,13 +56,6 @@ const products = [
         image: '🐍',
         description: '신비로운 뱀입니다'
     }
-    {
-        id: 9,
-        name: '물고기',
-        price: 100000,
-        image: '🐟',
-        description: '다양한 종류의 물고기입니다'
-    }
 ];
 
 // ===== 상태 관리 =====
