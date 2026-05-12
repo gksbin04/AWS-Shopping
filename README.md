@@ -1,22 +1,69 @@
-# AWS-Shopping
+# 🛒 AWS-Shopping: 쇼핑몰 시스템 구축 프로젝트 과제1
 
-## 📖 시스템 소개
-본 프로젝트는 AWS S3 정적 웹 호스팅을 활용하여 구축된 React 기반 쇼핑몰 웹사이트입니다.
+본 프로젝트는 React 기반 쇼핑몰 구현 과제를 목표로 하며, 현재는 HTML/CSS/JavaScript로 구성된 정적 웹 쇼핑몰 시스템으로 구현되어 있습니다. 또한 GitHub Actions 기반 CI/CD 파이프라인과 AWS S3 정적 호스팅을 핵심으로 합니다.
 
-## ✨ 기능 소개
-- **상품 디스플레이:** 메인 페이지 및 쇼핑몰 상품 목록 제공
-- **반응형 웹 UI:** 다양한 디바이스 환경에 맞춘 사용자 친화적 디자인 적용
-- **정적 웹 호스팅:** AWS S3의 정적 웹 사이트 호스팅 기능을 활용한 빠르고 안정적인 서비스 제공
-- **자동화된 배포(CI/CD):** GitHub Actions 연동으로 코드 업데이트 시 즉시 AWS S3로 동기화(Sync)되는 자동화 환경 구축
+---
 
-## 🚀 Github Actions 환경 소개 (CI/CD)
-본 프로젝트는 **GitHub Actions**를 사용하여 코드가 푸시되면 자동으로 AWS에 배포되도록 CI/CD 파이프라인을 구축했습니다.
-- `main` 브랜치에 코드가 push 되면 자동으로 배포 workflow(`deploy.yml`)가 실행됩니다.
-- AWS Academy 환경의 특성(임시 자격 증명 필요)을 반영하여, `AWS_SESSION_TOKEN`을 포함한 인증 정보를 GitHub Secrets에 안전하게 등록하여 `aws s3 sync` 명령어로 배포를 진행합니다.
+## ✅ 프로젝트 개요
+* `index.html`, `style.css`, `script.js`로 구성된 깔끔한 쇼핑몰 UI
+* 상품 목록 조회, 장바구니 추가, 수량 변경, 체크아웃 모달을 지원하는 인터랙티브 웹 앱
+* 반응형 디자인을 통해 다양한 화면에서 사용 가능한 UI 제공
+* AWS S3 정적 웹 호스팅을 통한 배포 지원 및 GitHub Actions 자동 배포 구성
 
-## 🔗 접속 URL (AWS S3)
-- **웹사이트 주소:** http://mybucket-3622.s3-website-us-east-1.amazonaws.com
-> ⚠️ **참고:** AWS Academy의 세션 유지 시간(4시간) 제한으로 인해 접속이 안 될 수 있습니다. 동작 확인은 아래 시연 영상을 참고해 주시기 바랍니다.
+---
 
-## 🎥 시연 영상 (YouTube)
-- **CI/CD 시연 영상 링크:** [여기에_업로드한_유튜브_링크를_적어주세요]
+## ✨ 주요 기능
+* 상품 카드 기반 목록 렌더링
+* 장바구니 담기 / 수량 증가 기능
+* 장바구니 모달 창으로 선택 상품 확인
+* 총 금액 계산 및 구매 완료 메시지 표시
+* 장바구니 상태는 세션 내에서 유지
+
+---
+
+## 🧩 기술 스택
+* HTML5
+* CSS3
+* JavaScript (vanilla JS)
+* AWS S3 정적 웹 호스팅
+* GitHub Actions CI/CD
+
+---
+
+## 📁 프로젝트 구조
+* `index.html` - 쇼핑몰 기본 레이아웃 및 장바구니 모달 UI
+* `style.css` - 반응형 스타일, 카드 레이아웃, 모달 스타일
+* `script.js` - 상품 데이터 관리, DOM 렌더링, 장바구니 로직
+
+---
+
+## ▶️ 로컬 실행 방법
+1. 저장소를 클론하거나 파일을 다운로드합니다.
+2. `index.html` 파일을 브라우저에서 직접 열어 실행합니다.
+
+> 개발자 도구를 사용하거나 로컬 서버가 필요하면 아래 명령으로 간단히 실행할 수 있습니다.
+
+```bash
+# Python 3 설치 시
+python -m http.server 8000
+```
+
+브라우저에서 `http://localhost:8000` 으로 접속합니다.
+
+---
+
+## 🚀 CI/CD & 배포
+* `main` 브랜치에 Push하면 GitHub Actions가 S3 배포를 트리거하도록 구성됩니다.
+* AWS 자격증명(`AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `AWS_SESSION_TOKEN`)은 GitHub Secrets로 안전하게 관리합니다.
+* 배포 워크플로우는 정적 파일을 S3 버킷과 동기화하여 빠른 정적 웹 호스팅을 지원합니다.
+
+---
+
+## 🔗 관련 링크
+* GitHub Repository: [https://github.com/gksbin04/AWS-Shopping](https://github.com/gksbin04/AWS-Shopping)
+* AWS S3 정적 사이트: [http://mybucket-3622.s3-website-us-east-1.amazonaws.com](http://mybucket-3622.s3-website-us-east-1.amazonaws.com)
+* CI/CD 시연 영상: [YouTube 시연 영상 바로가기](https://www.youtube.com/watch?v=qiniHBbZfrs)
+
+---
+
+**작성자**: 김한빈
