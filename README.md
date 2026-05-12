@@ -37,22 +37,14 @@
 
 ---
 
-## ▶️ 로컬 실행 방법
-1. 저장소를 클론하거나 파일을 다운로드합니다.
-2. `index.html` 파일을 브라우저에서 직접 열어 실행합니다.
-
-> 개발자 도구를 사용하거나 로컬 서버가 필요하면 아래 명령으로 간단히 실행할 수 있습니다.
-
-```bash
-# Python 3 설치 시
-python -m http.server 8000
-```
-
-브라우저에서 `http://localhost:8000` 으로 접속합니다.
+## 🚀 CI/CD & 배포
+* `main` 브랜치에 Push하면 GitHub Actions가 S3 배포를 트리거하도록 구성됩니다.
+* AWS 자격증명(`AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `AWS_SESSION_TOKEN`)은 GitHub Secrets로 안전하게 관리합니다.
+* 배포 워크플로우는 정적 파일을 S3 버킷과 동기화하여 빠른 정적 웹 호스팅을 지원합니다.
 
 ---
 
-## 🚀 CI/CD & 배포
+## 🔗 관련 링크
 * `main` 브랜치에 Push하면 GitHub Actions가 S3 배포를 트리거하도록 구성됩니다.
 * AWS 자격증명(`AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `AWS_SESSION_TOKEN`)은 GitHub Secrets로 안전하게 관리합니다.
 * 배포 워크플로우는 정적 파일을 S3 버킷과 동기화하여 빠른 정적 웹 호스팅을 지원합니다.
