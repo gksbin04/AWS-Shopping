@@ -54,6 +54,7 @@
 ## 🔗 관련 링크
 * GitHub Repository: [https://github.com/gksbin04/AWS-Shopping](https://github.com/gksbin04/AWS-Shopping)
 * AWS S3 정적 사이트: [http://mybucket-3622.s3-website-us-east-1.amazonaws.com](http://mybucket-3622.s3-website-us-east-1.amazonaws.com)
+  * 참고: 해당 AWS URL은 세션 유효기간이 약 4시간으로 제한되어 있습니다.
 * CI/CD 시연 영상: [YouTube 시연 영상 바로가기](https://www.youtube.com/watch?v=qiniHBbZfrs)
 
 ---
