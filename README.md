@@ -1,6 +1,5 @@
 # AWS-Shopping
 
-<<<<<<< HEAD
 ## 📖 시스템 소개
 본 프로젝트는 AWS S3 정적 웹 호스팅을 활용하여 구축된 React 기반 쇼핑몰 웹사이트입니다.
 
@@ -16,11 +15,8 @@
 - AWS Academy 환경의 특성(임시 자격 증명 필요)을 반영하여, `AWS_SESSION_TOKEN`을 포함한 인증 정보를 GitHub Secrets에 안전하게 등록하여 `aws s3 sync` 명령어로 배포를 진행합니다.
 
 ## 🔗 접속 URL (AWS S3)
-- **웹사이트 주소:** [여기에_본인의_AWS_S3_엔드포인트_URL을_적어주세요]
+- **웹사이트 주소:** http://mybucket-3622.s3-website-us-east-1.amazonaws.com
 > ⚠️ **참고:** AWS Academy의 세션 유지 시간(4시간) 제한으로 인해 접속이 안 될 수 있습니다. 동작 확인은 아래 시연 영상을 참고해 주시기 바랍니다.
 
 ## 🎥 시연 영상 (YouTube)
 - **CI/CD 시연 영상 링크:** [여기에_업로드한_유튜브_링크를_적어주세요]
-=======
-test
->>>>>>> b1dec2c6a5884d2f1354ca064ff241e2b6f0761b
